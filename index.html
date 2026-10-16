@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <title>Reflow</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Schibsted+Grotesk:wght@300;400;500;700&display=swap">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Schibsted+Grotesk:wght@300;400;500;700&display=swap" media="print" onload="this.media='all'">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90' font-weight='300' fill='%23edeff2'>re</text><text x='35' y='.9em' font-size='90' font-weight='400' fill='%23edeff2'>flow</text></svg>">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main>
+    <!-- Pinned Emblem Section -->
+    <div class="outer-wrapper">
+      <div class="pinned-frame">
+        <video class="emblem-video" autoplay muted loop playsinline preload="auto" aria-hidden="true">
+          <source src="https://wjwoitlioftohvwfymeq.supabase.co/storage/v1/object/public/designs/reflow/emblem-5.mp4" type="video/mp4">
+        </video>
+        <div class="scrim" aria-hidden="true"></div>
+      </div>
+    </div>
+
+    <!-- Content -->
+    <div class="content">
+      <!-- Bar -->
+      <nav class="bar" role="navigation" aria-label="Main navigation">
+        <span class="wordmark" aria-label="Reflow">re<b>flow</b></span>
+        <div class="bar-nav" role="menubar">
+          <a href="#crew" class="nav-link" role="menuitem" data-section="crew">Crew</a>
+          <a href="#boards" class="nav-link" role="menuitem" data-section="boards">Boards</a>
+          <a href="#process" class="nav-link" role="menuitem" data-section="process">Process</a>
+          <a href="#rates" class="nav-link" role="menuitem" data-section="rates">Rates</a>
+        </div>
+        <a href="#start" class="btn-filled" role="button">Start a build</a>
+        <button class="mobile-menu-btn" aria-expanded="false" aria-controls="mobile-panel" aria-label="Open menu">
+          <svg class="menu-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="3" y1="6" x2="21" y2="6"></line>
+            <line x1="3" y1="12" x2="21" y2="12"></line>
+            <line x1="3" y1="18" x2="21" y2="18"></line>
+          </svg>
+          <svg class="close-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="18" y1="6" x2="6" y2="18"></line>
+            <line x1="6" y1="6" x2="18" y2="18"></line>
+          </svg>
+        </button>
+      </nav>
+
+      <!-- Mobile Panel -->
+      <div class="mobile-panel" id="mobile-panel" role="dialog" aria-modal="true" aria-label="Navigation">
+        <a href="#crew" class="nav-link" data-section="crew">Crew</a>
+        <a href="#boards" class="nav-link" data-section="boards">Boards</a>
+        <a href="#process" class="nav-link" data-section="process">Process</a>
+        <a href="#rates" class="nav-link" data-section="rates">Rates</a>
+        <a href="#start" class="btn-filled inverted">Start a build</a>
+      </div>
+
+      <!-- Hero Section -->
+      <section id="crew" class="hero wrapper" aria-labelledby="hero-heading">
+        <div class="hero-left">
+          <h1 id="hero-heading" class="hero-heading">
+            <span>Boards designed,</span>
+            <br>
+            <span>firmware written,</span>
+            <br>
+            <span>both certified</span>
+          </h1>
+          <p class="hero-subtext body-text ink-50">Distributed crew. One bench, three cities.</p>
+        </div>
+        <div class="hero-right">
+          <div class="avatar-row" role="list" aria-label="Crew members">
+            <img class="avatar" src="https://wjwoitlioftohvwfymeq.supabase.co/storage/v1/object/public/designs/reflow/crew-01.webp" alt="Hardware lead" width="32" height="32" role="listitem">
+            <img class="avatar" src="https://wjwoitlioftohvwfymeq.supabase.co/storage/v1/object/public/designs/reflow/crew-02.webp" alt="Firmware engineer" width="32" height="32" role="listitem">
+            <img class="avatar" src="https://wjwoitlioftohvwfymeq.supabase.co/storage/v1/object/public/designs/reflow/crew-03.webp" alt="Compliance specialist" width="32" height="32" role="listitem">
+            <img class="avatar" src="https://wjwoitlioftohvwfymeq.supabase.co/storage/v1/object/public/designs/reflow/crew-04.webp" alt="Layout engineer" width="32" height="32" role="listitem">
+          </div>
+          <blockquote class="testimonial-card glass radius-card">
+            We arrived with a schematic and a date neither supplier believed. Six weeks later there were boards on a line, firmware signed, and the compliance file already assembled. They work like a department we had forgotten we had.
+          </blockquote>
+        </div>
+      </section>
+
+      <!-- Panel Section -->
+      <section class="panel-section wrapper" aria-labelledby="panel-heading">
+        <div id="send" class="panel-header glass radius-container">
+          <div>
+            <h2 id="panel-heading" class="section-heading">What the bench does</h2>
+            <a href="#send" class="btn-filled btn-arrow" style="margin-top: 24px;">
+              Send a schematic
+              <span class="arrow-mark" aria-hidden="true">
+                <svg viewBox="0 0 16 16" fill="none">
+                  <path d="M4 12L12 4M12 4L5 4M12 4L12 11" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </span>
+            </a>
+          </div>
+          <p class="panel-header-text body-text ink-70">We are a hardware crew that sits between a sketch and a production line. Schematic to layout, bring up to firmware, prototype to compliance file. We work in your tools, on your cadence, and we leave the documentation behind us.</p>
+        </div>
+        <div id="boards" class="card-grid">
+          <article class="feature-card glass radius-card">
+            <div class="card-index small-text ink-40">01</div>
+            <div class="card-content">
+              <h3 class="card-title">Boards that pass</h3>
+              <p class="body-text ink-60" style="margin-top: 8px;">Layout done for the line rather than for the schematic. Impedance, thermals and test points settled before anything reaches a fab.</p>
+            </div>
+          </article>
+          <article class="feature-card glass radius-card">
+            <div class="card-index small-text ink-40">02</div>
+            <div class="card-content">
+              <h3 class="card-title">Bring up in days</h3>
+              <p class="body-text ink-60" style="margin-top: 8px;">Firmware written alongside the layout instead of after it. First power on is a scheduled morning, not a month of surprises.</p>
+            </div>
+          </article>
+          <article class="feature-card glass radius-card">
+            <div class="card-index small-text ink-40">03</div>
+            <div class="card-content">
+              <h3 class="card-title">Compliance, handled</h3>
+              <p class="body-text ink-60" style="margin-top: 8px;">Emissions, safety and the paperwork behind them, planned from the first revision. No redesign three weeks from a launch window.</p>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <!-- Rates Section -->
+      <section id="rates" class="rates-section wrapper" aria-labelledby="rates-heading">
+        <h2 id="rates-heading" class="section-heading">Rates</h2>
+        <p class="panel-header-text body-text ink-70">Fixed scope or booked by the week. No retainers, no lock-in.</p>
+        <div class="rates-grid">
+          <article class="feature-card glass radius-card">
+            <div class="card-index small-text ink-40">Design review</div>
+            <div class="card-content">
+              <div class="stat-figure">$1,500</div>
+              <p class="body-text ink-60">Schematic and layout review with a written report. Fixed price, about one week.</p>
+              <button type="button" class="btn-filled" data-book="Design review">Book this</button>
+            </div>
+          </article>
+          <article class="feature-card glass radius-card">
+            <div class="card-index small-text ink-40">Board build</div>
+            <div class="card-content">
+              <div class="stat-figure">$8,000</div>
+              <p class="body-text ink-60">Schematic to tested prototype, layout and bring-up included. Quoted per board.</p>
+              <button type="button" class="btn-filled" data-book="Board build">Book this</button>
+            </div>
+          </article>
+          <article class="feature-card glass radius-card">
+            <div class="card-index small-text ink-40">The bench</div>
+            <div class="card-content">
+              <div class="stat-figure">$4,500 / wk</div>
+              <p class="body-text ink-60">A dedicated engineer on your project, booked by the week, cancel any time.</p>
+              <button type="button" class="btn-filled" data-book="The bench">Book this</button>
+            </div>
+          </article>
+        </div>
+      </section>
+    </div>
+
+    <!-- Close Section -->
+    <section id="start" class="close-section wrapper" aria-labelledby="close-heading">
+      <div id="process" class="ink-fill-wrapper">
+        <p id="ink-fill-text" class="ink-fill-paragraph" aria-live="polite"></p>
+      </div>
+      <div class="stats-row">
+        <div class="stat-card glass radius-stat">
+          <i aria-hidden="true"></i>
+          <div class="stat-index small-text ink-40">01</div>
+          <div class="stat-figure">412</div>
+          <div class="stat-label small-text ink-50">Boards taken to production</div>
+        </div>
+        <div class="stat-card glass radius-stat">
+          <i aria-hidden="true"></i>
+          <div class="stat-index small-text ink-40">02</div>
+          <div class="stat-figure">99.1%</div>
+          <div class="stat-label small-text ink-50">First pass yield across the last year</div>
+        </div>
+        <div class="stat-card glass radius-stat">
+          <i aria-hidden="true"></i>
+          <div class="stat-index small-text ink-40">03</div>
+          <div class="stat-figure">28 engineers</div>
+          <div class="stat-label small-text ink-50">The bench you can book against</div>
+        </div>
+      </div>
+      <div class="close-cta">
+        <button type="button" class="btn-filled inverted" data-book>Book the bench</button>
+      </div>
+    </section>
+
+    <div class="spacer" aria-hidden="true"></div>
+  </main>
+
+  <dialog id="book-dialog" class="book-dialog glass radius-container" aria-labelledby="book-title">
+    <form method="dialog" id="book-form">
+      <h2 id="book-title" class="section-heading">Book the bench</h2>
+      <label>Name<input name="name" required autocomplete="name"></label>
+      <label>Email<input name="email" type="email" required autocomplete="email"></label>
+      <label>Package
+        <select name="plan">
+          <option>Design review</option><option>Board build</option><option>The bench</option><option>Not sure yet</option>
+        </select>
+      </label>
+      <label>What are you building?<textarea name="msg" rows="4" required></textarea></label>
+      <div class="book-actions">
+        <button type="button" class="btn-filled" data-close>Cancel</button>
+        <button type="submit" class="btn-filled inverted">Send request</button>
+      </div>
+    </form>
+  </dialog>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
