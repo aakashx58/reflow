@@ -2,6 +2,8 @@
 
 Single-page marketing site for Reflow, a distributed hardware crew (schematic to layout, bring-up, firmware, compliance). Plain HTML, CSS and JS, with no build step.
 
+<img width="1894" height="888" alt="Screenshot 2026-10-18 203751" src="https://github.com/user-attachments/assets/8910fae8-3fac-4090-963d-846b244c1ea7" />
+
 ## Run
 
 Open `index.html` in a browser, or press F5 in VS Code (uses `.vscode/launch.json`, Chrome).
